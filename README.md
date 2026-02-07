@@ -66,6 +66,6 @@ Feel free to explore the code, but please do not copy the design or content verb
 
 ## Contact
 
-Website: https://devashishmishra.tech
-GitHub: https://github.com/Devashish-Mishra-2003
-LinkedIn: https://www.linkedin.com/in/devashish-mishra-
+- Website: https://devashishmishra.tech
+- GitHub: https://github.com/Devashish-Mishra-2003
+- LinkedIn: https://www.linkedin.com/in/devashish-mishra-
