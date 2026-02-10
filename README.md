@@ -1,43 +1,36 @@
-# Devashish Mishra — Portfolio
+# Devashish Mishra — Multi-Theme Architecture
+A high-performance React application designed with a State-Driven Theme Engine. This project serves as a technical demonstration of managing divergent design systems, non-linear UI flows, and complex state synchronization within a single-page application (SPA).
 
-Personal portfolio website showcasing my projects, experience, skills, and certifications in **AI, Machine Learning, Backend, and Full-Stack development**.
+It is also my portfolio.
 
-Live at: **https://devashishmishra.tech**
+*This website is also build from a perspective to showcase my frontend and UI/UX abilities.*
 
-## Overview
+Live Link: https://devashishmishra.tech
 
-This is a single-page, production-ready portfolio built to be:
-- Fast and lightweight
-- Easy to skim for recruiters
-- Focused on real engineering work, not fluff
-- Fully responsive across devices
+## Engineering Highlights
+### 1. The Multi-Theme State Controller :
+The core of the application is a centralized theme manager built with TypeScript and React Hooks. It manages a 4-way switch between fundamentally different layout paradigms:
+- **Modern (Light):** High-salience, print-inspired design focusing on typography and whitespace.
+- **Classic (Neo-Brutalist):** High-contrast, border-heavy aesthetic with a focus on "raw" UI elements.
+- **Terminal (CLI):** A low-latency, monospace environment featuring a custom typewriter hook to simulate system boot sequences and command-line interactions.
+- **Retro (Windows XP):** A Non-Linear Desktop Environment. This theme breaks away from the standard vertical scroll, implementing a coordinate-based system.
 
-The design follows a **terminal-inspired, black & white aesthetic** with subtle physical UI interactions.
+### 2. "Retro-OS" Window Manager
+The Retro XP theme is a standalone technical feat within the app:
+- **Z-Index Management:** Implemented logic to track "active" windows, ensuring the last-clicked application pops to the front of the stack.
+- **State-Linked Taskbar:** A dynamic taskbar that synchronizes with the openWindows state, showing active processes and allowing for window toggling.
+- **Component Shelling:** Used a high-order "Window Shell" component that wraps standard content sections, providing the classic blue title bar, control buttons, and "File Explorer" navigation bars.
 
-## Tech Stack
+### 3. Performance & Optimization
+- **Zero-Inference Conditional Rendering:** To maintain high performance, the engine utilizes a mapping object that swaps component sets based on the active theme, preventing the browser from rendering hidden theme elements in the background.
+- **Persistence:** Integrated localStorage hooks to ensure the user's selected design "personality" persists across sessions.
+- **Responsive Adaptation:** Each theme maintains its own set of Tailwind breakpoints. While the Modern theme uses fluid grids, the Retro theme adapts window sizes to max-w-[95%] to ensure the "desktop" experience remains functional on mobile devices.
 
-- **Frontend:** React + TypeScript
-- **Styling:** Tailwind CSS
-- **Build Tool:** Vite
-- **Hosting:** Netlify
-- **Domain:** Custom `.tech` domain
-
-## Sections
-
-- **Hero** — Intro with animated typewriter text
-- **Projects** — Selected projects with GitHub & live links
-- **Experience** — Industry internships (IBM, Infosys)
-- **Certificates** — Verified professional certifications
-- **Skills** — Grouped skill chips with physical UI styling
-- **Education & Achievements** — Academic background and co-curricular highlights
-
-## Key Features
-
-- Typed text animations for section descriptions
-- Consistent offset-based button and card interactions
-- Clean, scannable layout for recruiters
-- Responsive design (mobile → desktop)
-- Deployed with automatic HTTPS
+## Tech Stack & Patterns
+- **Framework:** React 18 + Vite (for ultra-fast HMR).
+- **Typing:** Strict TypeScript (defining ThemeType and WindowState interfaces to prevent runtime errors).
+- **Styling:** Tailwind CSS (leveraging JIT engine for custom Retro gradients and Neo-Brutalist shadows).
+- **Animation:** Framer Motion & Custom Hooks (used for the terminal typewriter effect and window transitions).
 
 ## Local Development
 
