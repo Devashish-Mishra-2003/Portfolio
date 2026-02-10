@@ -7,7 +7,8 @@ export default function Education() {
 
   return (
     <section id="education" className="bg-[var(--bg)]">
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-15">
+      {/* Changed pb-15 to pb-0 to eliminate the bottom gap */}
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 pt-15 pb-10">
         
         <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white">
           Education & Achievements
@@ -18,12 +19,12 @@ export default function Education() {
           <span className="animate-pulse ml-1 text-white">_</span>
         </p>
 
-        {/* Added 'mb-20' here to create the separation from the Footer */}
-        <div className="mt-16 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
+        {/* REMOVED 'mb-20' - The grid now flows directly into the footer space */}
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-white/20 -translate-x-1/2" />
 
           {/* LEFT COLUMN: Education */}
-          <div className="space-y-8">
+          <div className="space-y-8 pb-12">
             <h3 className="text-xl font-black uppercase tracking-tighter text-white inline-block border-b-2 border-white pb-1">
               Academic Path
             </h3>
@@ -45,7 +46,7 @@ export default function Education() {
           </div>
 
           {/* RIGHT COLUMN: Co-Curriculars */}
-          <div className="space-y-8">
+          <div className="space-y-8 pb-12">
             <h3 className="text-xl font-black uppercase tracking-tighter text-white inline-block border-b-2 border-white pb-1">
               System Logs
             </h3>
