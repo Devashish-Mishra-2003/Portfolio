@@ -42,7 +42,7 @@ export default function HeroRetro() {
       className="relative h-screen w-full overflow-hidden font-sans select-none cursor-default"
       style={{ 
         backgroundColor: "#3a6ea5",
-        backgroundImage: "url('https://wallpapercave.com/wp/wp1851144.jpg')", 
+        backgroundImage: "url('https://wallpapercave.com/wp/wp6511659.jpg')", 
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
