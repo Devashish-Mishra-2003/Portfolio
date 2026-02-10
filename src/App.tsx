@@ -39,7 +39,7 @@ type ThemeType = 'original' | 'terminal' | 'light' | 'retro';
 function App() {
   const [theme, setTheme] = useState<ThemeType>(() => {
     const saved = localStorage.getItem("portfolio-theme");
-    return (saved as ThemeType) || "original";
+    return (saved as ThemeType) || "light";
   });
 
   useEffect(() => {
