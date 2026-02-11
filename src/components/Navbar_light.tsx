@@ -42,7 +42,7 @@ export default function NavbarLight() {
 
             {/* THE BUTTON: Saturated Purple Offset */}
             <div className="hidden lg:block">
-               <a href="/resume.pdf" download className="relative group inline-block">
+               <a href="/resume_sde.pdf" download className="relative group inline-block">
                 {/* Shadow/Offset layer - Solid Black */}
                 <span className="absolute inset-0 bg-black translate-x-[3px] translate-y-[3px] group-active:translate-x-0 group-active:translate-y-0 transition-all duration-75" />
                 
@@ -73,7 +73,7 @@ export default function NavbarLight() {
             <a href="#certificates" onClick={() => setOpen(false)} className="block text-2xl font-black uppercase hover:text-violet-600 transition-colors">Certificates</a>
             
             <div className="pt-4 lg:hidden flex justify-center">
-              <a href="/resume.pdf" download className="relative group inline-block">
+              <a href="/resume_sde.pdf" download className="relative group inline-block">
                 <span className="absolute inset-0 bg-black translate-x-[5px] translate-y-[5px] transition-all duration-75" />
                 <span className="relative z-10 block border-2 border-black bg-violet-600 px-10 py-3 text-lg font-black uppercase text-white">
                   Resume →

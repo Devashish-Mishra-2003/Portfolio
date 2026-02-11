@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+
   return (
     <header className="bg-black text-white border-b-2 border-white sticky top-0 z-50">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
@@ -27,7 +28,7 @@ export default function Navbar() {
 
             {/* THE BUTTON: Hidden when mobile menu is active to avoid double-buttons */}
             <div className="hidden lg:block">
-               <a href="/resume.pdf" download className="relative group inline-block">
+               <a href="/resume_sde.pdf" download className="relative group inline-block">
                 <span className="absolute inset-0 bg-white translate-x-[4px] translate-y-[4px] group-active:opacity-0 transition-all duration-75" />
                 <span className="relative z-10 block border-2 border-white bg-black px-5 py-1.5 text-sm font-black uppercase flex items-center gap-2 group-active:translate-x-[4px] group-active:translate-y-[4px] transition-all duration-75">
                   Resume <span>→</span>
@@ -56,7 +57,7 @@ export default function Navbar() {
             
             {/* Resume button only shows here on screens where the desktop version is hidden */}
             <div className="pt-4 lg:hidden flex justify-center">
-              <a href="/resume.pdf" download className="relative group inline-block">
+              <a href="/resume_sde.pdf" download className="relative group inline-block">
                 <span className="absolute inset-0 bg-white translate-x-[5px] translate-y-[5px] group-active:opacity-0 transition-all duration-75" />
                 <span className="relative z-10 block border-2 border-white bg-black px-10 py-3 text-lg font-black uppercase group-active:translate-x-[5px] group-active:translate-y-[5px] transition-all duration-75">
                   Resume →

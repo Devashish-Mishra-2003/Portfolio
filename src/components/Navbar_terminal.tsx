@@ -39,7 +39,7 @@ export default function Navbar() {
 
             {/* THE BUTTON: Modified to be "Functional Green" */}
             <div className="hidden lg:block">
-               <a href="/resume.pdf" download className="relative group inline-block">
+               <a href="/resume_sde.pdf" download className="relative group inline-block">
                 {/* Shadow/Offset layer - Green for high visibility */}
                 <span className="absolute inset-0 bg-green-500 translate-x-[3px] translate-y-[3px] group-active:opacity-0 transition-all duration-75" />
                 
@@ -70,7 +70,7 @@ export default function Navbar() {
             <a href="#certificates" onClick={() => setOpen(false)} className="block text-lg font-bold uppercase hover:translate-x-2 transition-transform">/root/certificates</a>
             
             <div className="pt-6 lg:hidden flex justify-start">
-              <a href="/resume.pdf" download className="relative group inline-block w-full text-center">
+              <a href="/resume_sde.pdf" download className="relative group inline-block w-full text-center">
                 <span className="absolute inset-0 bg-green-500 translate-x-[4px] translate-y-[4px] transition-all duration-75" />
                 <span className="relative z-10 block border-2 border-green-500 bg-black px-10 py-3 text-lg font-black uppercase text-green-500">
                   ./get_resume.sh
